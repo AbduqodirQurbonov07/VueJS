@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>{{ sanoq }}</p>
-    <button @click="add">Oshirish</button>
+    <button class="bg-green-600 gap-3" @click="add">Oshirish</button>
     <button id="minus" @click="minus">kamaytirish</button>
   </div>
 </template>
@@ -18,13 +18,6 @@ function minus() {
 </script>
 
 <style scoped>
-button {
-  color: white;
-  background-color: darkgreen;
-  padding: 10px 33px;
-  border-radius: 8px;
-  border: 1px solid transparent;
-}
 #minus {
   color: white;
   background-color: darkred;

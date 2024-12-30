@@ -30,7 +30,8 @@
 
 <script setup>
 import { ref } from "vue";
-let istrueon = ref(false);
+
+let istrueon = ref(felse);
 
 function isOn() {
   istrueon.value = true;

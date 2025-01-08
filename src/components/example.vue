@@ -34,7 +34,7 @@
       <p>Parol</p>
       <input
         v-model="parol"
-        class="px-4 py-1.5 border border-slate-200 rounded-lg w-80"
+        class="px-4 py-1.5 border border-slate-200 rounded-lg w-8`cbh 0"
         type="password"
         placeholder="Enter you password..."
       />
@@ -70,7 +70,7 @@ let parol = ref("");
 let users = reactive([
   { parol: "1234567", login: "Abubakr" },
   { parol: "12345", login: "Abduqodir" },
-  { parol: "123", login: "MuhamadRajab" },
+  { parol: "123", login: "Muhammadrajab" },
 ]);
 function submitForm() {
   isLoading.value = true;

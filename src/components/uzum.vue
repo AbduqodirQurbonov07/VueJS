@@ -2,6 +2,7 @@
   <div class="flex gap-4 m-6">
     <div v-for="uz in uzum" :key="uz.mal" class="hover:shadow-md w-64 h-78">
       <div class="overflow-hidden">
+        <img class="heart" src="../images/heart.svg" alt="" />
         <img
           class="h-78 w-64 rounded-xl hover:scale-105 hover:transition duration-700"
           :src="getImg(uz?.img)"
@@ -78,9 +79,17 @@ let uzum = [
 ];
 </script>
 <style>
-/* @import url(https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;800;900&display=swap); */
+@import url(https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;800;900&display=swap);
 
-/* * { */
-/* font-family: "Kanit", sans-serif; */
-/* } */
+* {
+  font-family: "Kanit", sans-serif;
+}
+.heart {
+  position: relative;
+  left: 200px;
+  top: 40px;
+}
+.heart:hover {
+  color: purple;
+}
 </style>
